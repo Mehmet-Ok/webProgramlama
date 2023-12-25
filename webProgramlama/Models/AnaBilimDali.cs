@@ -8,6 +8,7 @@ namespace webProgramlama.Models
         public int ID { get; set; }
 
         [Required]
+        //edit
         public string ad { get; set; }
     }
 }
