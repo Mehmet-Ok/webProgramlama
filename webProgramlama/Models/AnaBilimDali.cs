@@ -8,7 +8,7 @@ namespace webProgramlama.Models
         public int ID { get; set; }
 
         [Required]
-        //edit
+        //fonksiyon ekle
         public string ad { get; set; }
     }
 }
