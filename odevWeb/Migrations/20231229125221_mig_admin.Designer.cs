@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using odevWeb.Models;
 
@@ -11,9 +12,10 @@ using odevWeb.Models;
 namespace odevWeb.Migrations
 {
     [DbContext(typeof(BizimContext))]
-    partial class BizimContextModelSnapshot : ModelSnapshot
+    [Migration("20231229125221_mig_admin")]
+    partial class mig_admin
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

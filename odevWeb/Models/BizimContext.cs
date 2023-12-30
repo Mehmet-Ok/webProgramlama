@@ -15,6 +15,8 @@ namespace odevWeb.Models
         public DbSet<KayitliRandevu> kayitliRandevus { get; set; }
         public DbSet<Poliklinik> polikliniks { get; set; }
         public DbSet<Randevu> randevus { get; set; }
+        public DbSet<Admin> admins { get; set; }
+
 
 
     }
