@@ -1,0 +1,15 @@
+﻿@using WebApplication1.Entities;
+@model List<Randevu>
+
+<h2>Randevu List</h2>
+
+<form method="post" action="HandleSelection">
+    @foreach (var product in Model)
+    {
+        <div>
+            <input type="checkbox" name="selectedProducts" value="@product.RandevuId" /> @product.RandevuTarih
+        </div>
+    }
+
+    <button type="submit">Submit</button>
+</form>
